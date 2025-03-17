@@ -52,9 +52,15 @@ const student2: StudentType = {
   batch: 2022,
 };
 
-// normal function and Array Function
+// normal function
 function multipy(num1: number, num2: number): number {
   const result: number = num1 * num2;
   return result;
 }
 console.log(multipy(2, 4));
+
+// Array Function
+const twoSum = (a: number, b: number): number => {
+  return a + b;
+};
+console.log("sum = " + twoSum(2, 4));
