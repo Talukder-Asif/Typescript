@@ -51,10 +51,17 @@ const boolArr: ArrayType3 = [true, false, false, true, false];
   };
 
   //   Generic in Function
-  const showMessage = <T>(message: T) => {
-    return message;
+  const showMessage = <T, Person>(message: T, personInfo: Person) => {
+    return { message, personInfo };
   };
-  console.log(showMessage<string>("Hello World!"));
+  console.log(
+    showMessage<string, IPerson<number, string>>("Hello World!", {
+      name: "Asif",
+      age: 23,
+      address: "Sirajganj",
+      phone: "+8801712345678",
+    })
+  );
 
   //
 }
