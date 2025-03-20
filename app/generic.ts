@@ -49,5 +49,12 @@ const boolArr: ArrayType3 = [true, false, false, true, false];
     address: "Sirajganj",
     phone: "+8801712345678",
   };
+
+  //   Generic in Function
+  const showMessage = <T>(message: T) => {
+    return message;
+  };
+  console.log(showMessage<string>("Hello World!"));
+
   //
 }
